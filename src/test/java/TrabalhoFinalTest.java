@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -16,9 +15,9 @@ import static org.junit.Assert.*;
  *
  * @author gt2a
  */
-public class TrabalhoFinal_Entrega_2_Test {
+public class TrabalhoFinalTest {
     
-    public TrabalhoFinal_Entrega_2_Test() {
+    public TrabalhoFinalTest() {
     }
     
     @BeforeClass
@@ -40,6 +39,8 @@ public class TrabalhoFinal_Entrega_2_Test {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-    // @Test
-    // public void hello() {}
+     @Test
+     public void hello() {
+     
+     }
 }
