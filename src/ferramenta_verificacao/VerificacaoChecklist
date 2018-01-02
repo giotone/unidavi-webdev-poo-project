@@ -1,0 +1,78 @@
+Ferramenta de Verificação
+
+A->[ ] Encapsulamento - Verificar a quantidade de métodos de uma classe. Se a quantidade for muito exagerada, analisar a possibilidade de separar esses métodos em classes diferentes.
+B->[ ] Encapsulamento - Analisar os tamanhos dos métodos e a possiblidade de ser dividido em métodos privados ou até mesmo em classes diferentes.
+C->[ ] Encapsulamento - Analisar os métodos privados e a possibilidade de transforma-los em classes diferentes para que o código fique o mais encapsulado possível, eliminando a quantidade excessiva de métodos privados em uma classe.
+D->[ ] Encapsulamento - Ocultação da implementação: deixar visível para as outras classes somente o necessário, transformando assim métodos públicos em privados acessando-os através de getters e setters.
+
+E->[ ] Herança - Verificar se é possível criar uma classe de herança para reutilização a partir de uma classe principal;
+F->[ ] Herança - Analisar se a classe dispõe de métodos abstratos para que possam ser sobrescritos em uma subclasse.
+G->[ ] Herança - Verificar o acesso protegido dos métodos e atributos para que o conceito de herança não seja perdido. Somente os métodos devem ser protected enquanto os atributos não.
+
+H->[ ] Polimorfismo - Uso de acesso protegido, seja em métodos ou variáveis.
+I->[ ] Polimorfismo - Uso de sobrescrita em métodos que podem ser reescritos alterando a forma original da classe extendida.
+J->[ ] Polimorfismo - Uso de sobrecarga em métodos que podem ser reutilizados de forma diferente, aceitando até mesmo parâmetros diferentes.
+
+Legenda de pontos: (1 - não usa, 2 - usa médio, 3 - usa bem).
+
+Verificação
+--------------------------------------------
+Classe "Basquete"
+    A = 3;    B = 3;    C = 3;    D = 3;
+    E = 3;    F = 3;    G = 3;
+    H = 3;    I = 3;    J = 3;
+TOTAL = 30;
+--------------------------------------------
+Classe "Equipe"
+    A = 3;    B = 3;    C = 3;    D = 3;
+    E = 3;    F = 3;    G = 1;
+    H = 1;    I = 3;    J = 3;
+TOTAL = 26;
+--------------------------------------------
+Classe "EquipeBasquete"
+    A = 3;    B = 3;    C = 3;    D = 3;
+    E = 3;    F = 3;    G = 1;
+    H = 1;    I = 3;    J = 3;
+TOTAL = 26;
+--------------------------------------------
+Classe "IniciaListaEquipe"
+    A = 3;    B = 3;    C = 3;    D = 3;
+    E = 1;    F = 1;    G = 1;
+    H = 1;    I = 1;    J = 1;
+TOTAL = 18;
+--------------------------------------------
+Classe "Jogador"
+    A = 3;    B = 3;    C = 3;    D = 3;
+    E = 3;    F = 3;    G = 3;
+    H = 3;    I = 3;    J = 3;
+TOTAL = 30;
+--------------------------------------------
+Classe "Jogo"
+    A = 3;    B = 3;    C = 3;    D = 3;
+    E = 3;    F = 3;    G = 3;
+    H = 3;    I = 3;    J = 3;
+TOTAL = 30;
+--------------------------------------------
+Classe "JogoBasquete"
+    A = 3;    B = 3;    C = 3;    D = 3;
+    E = 3;    F = 3;    G = 1;
+    H = 1;    I = 1;    J = 3;
+TOTAL = 24;
+--------------------------------------------
+Classe "NBA"
+    A = 2;    B = 3;    C = 2;    D = 3;
+    E = 1;    F = 3;    G = 3;
+    H = 3;    I = 1;    J = 3;
+TOTAL = 24;
+
+
+Classificação
+--------------------------------------------
+Classe "Basquete" = 30;
+Classe "Jogador" = 30;
+Classe "Jogo" = 30;
+Classe "Equipe" = 26;
+Classe "EquipeBasquete" = 26;
+Classe "JogoBasquete" = 24;
+Classe "NBA" = 24;
+Classe "IniciaListaEquipe" = 18;
