@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>IniciaListaEquipe xref</title>
+<link type="text/css" rel="stylesheet" href="../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../apidocs/TrabalhoFinal_Entrega_2/IniciaListaEquipe.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_comment">/*</em>
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_comment"> * To change this license header, choose License Headers in Project Properties.</em>
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_comment"> * To change this template file, choose Tools | Templates</em>
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_comment"> * and open the template in the editor.</em>
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_comment"> */</em>
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">package</strong> TrabalhoFinal_Entrega_2;
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <strong class="jxr_keyword">import</strong> java.util.ArrayList;
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <strong class="jxr_keyword">import</strong> java.util.List;
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_javadoccomment"> *</em>
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <em class="jxr_javadoccomment"> * @author gt2a</em>
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../TrabalhoFinal_Entrega_2/IniciaListaEquipe.html">IniciaListaEquipe</a> {
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>      
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>      <strong class="jxr_keyword">private</strong> List&lt;EquipeBasquete&gt; equipe = <strong class="jxr_keyword">new</strong> ArrayList&lt;EquipeBasquete&gt;();
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>      <strong class="jxr_keyword">public</strong> List&lt;EquipeBasquete&gt; getEquipe() {
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>          <strong class="jxr_keyword">return</strong> equipe;
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>      }
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>      
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>      <strong class="jxr_keyword">public</strong> <a href="../TrabalhoFinal_Entrega_2/IniciaListaEquipe.html">IniciaListaEquipe</a>(){
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>          
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>          <strong class="jxr_keyword">this</strong>.addJogadorEquipeUsandoLista();                
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>          <strong class="jxr_keyword">this</strong>.addJogadorEquipeDireto();        
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>      }
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>      
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>      <em class="jxr_comment">// método criado só para mostrar que é possivel utilizar o "addJogador" de duas maneiras</em>
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> addJogadorEquipeUsandoLista(){
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>          List&lt;Jogador&gt; listaJogador = <strong class="jxr_keyword">new</strong> ArrayList&lt;Jogador&gt;();
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>      
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>          <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a> j1 = <strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Al Horford"</span>, 42);
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>          <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a> j2 = <strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Jaylen Brown"</span>, 7);
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>          <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a> j3 = <strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Aron Baynes"</span>,46);
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>          <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a> j4 = <strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Jayson Tatum"</span>,0);
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>          
+<a class="jxr_linenumber" name="L38" href="#L38">38</a>          listaJogador.add(j1);
+<a class="jxr_linenumber" name="L39" href="#L39">39</a>          listaJogador.add(j2);
+<a class="jxr_linenumber" name="L40" href="#L40">40</a>          listaJogador.add(j3);
+<a class="jxr_linenumber" name="L41" href="#L41">41</a>          listaJogador.add(j4);                
+<a class="jxr_linenumber" name="L42" href="#L42">42</a>          
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>          <a href="../TrabalhoFinal_Entrega_2/EquipeBasquete.html">EquipeBasquete</a> celtics = <strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/EquipeBasquete.html">EquipeBasquete</a>(<span class="jxr_string">"Boston Celtics"</span>,<span class="jxr_string">"2017-2018"</span>);
+<a class="jxr_linenumber" name="L44" href="#L44">44</a>          celtics.setVitoria(10);
+<a class="jxr_linenumber" name="L45" href="#L45">45</a>          celtics.setDerrota(2);
+<a class="jxr_linenumber" name="L46" href="#L46">46</a>          celtics.addJogador(listaJogador);
+<a class="jxr_linenumber" name="L47" href="#L47">47</a>          
+<a class="jxr_linenumber" name="L48" href="#L48">48</a>          <strong class="jxr_keyword">this</strong>.equipe.add(celtics);
+<a class="jxr_linenumber" name="L49" href="#L49">49</a>      }
+<a class="jxr_linenumber" name="L50" href="#L50">50</a>      
+<a class="jxr_linenumber" name="L51" href="#L51">51</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> addJogadorEquipeDireto(){
+<a class="jxr_linenumber" name="L52" href="#L52">52</a>          
+<a class="jxr_linenumber" name="L53" href="#L53">53</a>          <a href="../TrabalhoFinal_Entrega_2/EquipeBasquete.html">EquipeBasquete</a> hornets = <strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/EquipeBasquete.html">EquipeBasquete</a>(<span class="jxr_string">"Charlotte Hornets"</span>,<span class="jxr_string">"2017-2018"</span>);
+<a class="jxr_linenumber" name="L54" href="#L54">54</a>          hornets.setVitoria(0);
+<a class="jxr_linenumber" name="L55" href="#L55">55</a>          hornets.setDerrota(0);
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>          hornets.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Malik Monk"</span>,1));
+<a class="jxr_linenumber" name="L57" href="#L57">57</a>          hornets.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Kemba Walker"</span>,15));
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>          hornets.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Jeremy Lamb"</span>,3));
+<a class="jxr_linenumber" name="L59" href="#L59">59</a>          hornets.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Cody Zeller"</span>,40));
+<a class="jxr_linenumber" name="L60" href="#L60">60</a>          
+<a class="jxr_linenumber" name="L61" href="#L61">61</a>          <a href="../TrabalhoFinal_Entrega_2/EquipeBasquete.html">EquipeBasquete</a> pistons = <strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/EquipeBasquete.html">EquipeBasquete</a>(<span class="jxr_string">"Detroit Pistons"</span>,<span class="jxr_string">"2017-2018"</span>);
+<a class="jxr_linenumber" name="L62" href="#L62">62</a>          pistons.setVitoria(0);
+<a class="jxr_linenumber" name="L63" href="#L63">63</a>          pistons.setDerrota(0);
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>          pistons.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Tobias Harris"</span>,34));
+<a class="jxr_linenumber" name="L65" href="#L65">65</a>          pistons.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Stanley Johnson"</span>,7));
+<a class="jxr_linenumber" name="L66" href="#L66">66</a>          pistons.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Andre Drummond"</span>,0));
+<a class="jxr_linenumber" name="L67" href="#L67">67</a>          pistons.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Ishmael Smith"</span>,14));
+<a class="jxr_linenumber" name="L68" href="#L68">68</a>          
+<a class="jxr_linenumber" name="L69" href="#L69">69</a>          <a href="../TrabalhoFinal_Entrega_2/EquipeBasquete.html">EquipeBasquete</a> magic = <strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/EquipeBasquete.html">EquipeBasquete</a>(<span class="jxr_string">"Orlando Magic"</span>,<span class="jxr_string">"2017-2018"</span>);
+<a class="jxr_linenumber" name="L70" href="#L70">70</a>          magic.setVitoria(0);
+<a class="jxr_linenumber" name="L71" href="#L71">71</a>          magic.setDerrota(0);
+<a class="jxr_linenumber" name="L72" href="#L72">72</a>          magic.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"T.J. Warren"</span>,12));
+<a class="jxr_linenumber" name="L73" href="#L73">73</a>          magic.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Alex Len"</span>,21));
+<a class="jxr_linenumber" name="L74" href="#L74">74</a>          magic.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Devin Booker"</span>,1));
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>          magic.addJogador(<strong class="jxr_keyword">new</strong> <a href="../TrabalhoFinal_Entrega_2/Jogador.html">Jogador</a>(<span class="jxr_string">"Josh Jackson"</span>,20));
+<a class="jxr_linenumber" name="L76" href="#L76">76</a>          
+<a class="jxr_linenumber" name="L77" href="#L77">77</a>          <strong class="jxr_keyword">this</strong>.equipe.add(hornets);
+<a class="jxr_linenumber" name="L78" href="#L78">78</a>          <strong class="jxr_keyword">this</strong>.equipe.add(pistons);
+<a class="jxr_linenumber" name="L79" href="#L79">79</a>          <strong class="jxr_keyword">this</strong>.equipe.add(magic);
+<a class="jxr_linenumber" name="L80" href="#L80">80</a>      }
+<a class="jxr_linenumber" name="L81" href="#L81">81</a>  }
+<a class="jxr_linenumber" name="L82" href="#L82">82</a>  
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2018. All rights reserved.</div>
+</body>
+</html>
