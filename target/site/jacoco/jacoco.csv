@@ -1,0 +1,10 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+TrabalhoFinal_Entrega_2,TrabalhoFinal_Entrega_2,Jogador,0,23,0,0,0,10,0,5,0,5
+TrabalhoFinal_Entrega_2,TrabalhoFinal_Entrega_2,Equipe,0,45,0,0,0,17,0,11,0,11
+TrabalhoFinal_Entrega_2,TrabalhoFinal_Entrega_2,NBA,16,394,0,6,4,62,2,9,2,6
+TrabalhoFinal_Entrega_2,TrabalhoFinal_Entrega_2,Jogo,0,31,0,0,0,13,0,9,0,9
+TrabalhoFinal_Entrega_2,TrabalhoFinal_Entrega_2,Basquete,8,57,0,0,2,19,0,6,0,6
+TrabalhoFinal_Entrega_2,TrabalhoFinal_Entrega_2,EquipeBasquete,0,24,0,0,0,9,0,3,0,3
+TrabalhoFinal_Entrega_2,TrabalhoFinal_Entrega_2,TrabalhoFinal,34,0,0,0,8,0,2,0,2,0
+TrabalhoFinal_Entrega_2,TrabalhoFinal_Entrega_2,JogoBasquete,0,46,0,0,0,11,0,5,0,5
+TrabalhoFinal_Entrega_2,TrabalhoFinal_Entrega_2,IniciaListaEquipe,0,216,0,0,0,46,0,4,0,4

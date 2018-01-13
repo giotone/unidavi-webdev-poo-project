@@ -25,11 +25,11 @@ public abstract class Jogo {
         this.dataJogo = dataJogo;
     }
 
-    public Time getHoraJogo() {
+    public String getHoraJogo() {
         return horaJogo;
     }
 
-    public void setHoraJogo(Time horaJogo) {
+    public void setHoraJogo(String horaJogo) {
         this.horaJogo = horaJogo;
     }
 
@@ -50,7 +50,7 @@ public abstract class Jogo {
     }
     
     private Date dataJogo;
-    private Time horaJogo;
+    private String horaJogo;
     private int pontoTime1;
     private int pontoTime2;
     

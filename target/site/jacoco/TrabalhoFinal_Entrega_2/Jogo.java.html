@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Jogo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TrabalhoFinal_Entrega_2</a> &gt; <a href="index.source.html" class="el_package">TrabalhoFinal_Entrega_2</a> &gt; <span class="el_source">Jogo.java</span></div><h1>Jogo.java</h1><pre class="source lang-java linenums">package TrabalhoFinal_Entrega_2;
+
+
+import java.sql.Time;
+import java.util.ArrayList;
+import java.util.Date;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author gt2a
+ */
+<span class="fc" id="L18">public abstract class Jogo {    </span>
+
+    public Date getDataJogo() {
+<span class="fc" id="L21">        return dataJogo;</span>
+    }
+
+    public void setDataJogo(Date dataJogo) {
+<span class="fc" id="L25">        this.dataJogo = dataJogo;</span>
+<span class="fc" id="L26">    }</span>
+
+    public String getHoraJogo() {
+<span class="fc" id="L29">        return horaJogo;</span>
+    }
+
+    public void setHoraJogo(String horaJogo) {
+<span class="fc" id="L33">        this.horaJogo = horaJogo;</span>
+<span class="fc" id="L34">    }</span>
+
+    public int getPontoTime1() {
+<span class="fc" id="L37">        return pontoTime1;</span>
+    }
+
+    public void setPontoTime1(int pontoTime1) {
+<span class="fc" id="L41">        this.pontoTime1 = pontoTime1;</span>
+<span class="fc" id="L42">    }</span>
+
+    public int getPontoTime2() {
+<span class="fc" id="L45">        return pontoTime2;</span>
+    }
+
+    public void setPontoTime2(int pontoTime2) {
+<span class="fc" id="L49">        this.pontoTime2 = pontoTime2;</span>
+<span class="fc" id="L50">    }</span>
+    
+    private Date dataJogo;
+    private String horaJogo;
+    private int pontoTime1;
+    private int pontoTime2;
+    
+    protected abstract void Agendar(String dataHoraJogo);
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>

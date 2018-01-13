@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Equipe.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TrabalhoFinal_Entrega_2</a> &gt; <a href="index.source.html" class="el_package">TrabalhoFinal_Entrega_2</a> &gt; <span class="el_source">Equipe.java</span></div><h1>Equipe.java</h1><pre class="source lang-java linenums">package TrabalhoFinal_Entrega_2;
+
+
+import java.util.List;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author gt2a
+ */
+<span class="fc" id="L16">public abstract class Equipe {       </span>
+
+    public String getNome() {
+<span class="fc" id="L19">        return Nome;</span>
+    }
+
+    public void setNome(String Nome) {
+<span class="fc" id="L23">        this.Nome = Nome;</span>
+<span class="fc" id="L24">    }</span>
+
+    public int getVitoria() {
+<span class="fc" id="L27">        return Vitoria;</span>
+    }
+
+    public void setVitoria(int Vitoria) {
+<span class="fc" id="L31">        this.Vitoria = Vitoria;</span>
+<span class="fc" id="L32">    }</span>
+
+    public int getDerrota() {
+<span class="fc" id="L35">        return Derrota;</span>
+    }
+
+    public void setDerrota(int Derrota) {
+<span class="fc" id="L39">        this.Derrota = Derrota;</span>
+<span class="fc" id="L40">    }</span>
+
+    public String getTemporada() {
+<span class="fc" id="L43">        return Temporada;</span>
+    }
+
+    public void setTemporada(String Temporada) {
+<span class="fc" id="L47">        this.Temporada = Temporada;</span>
+<span class="fc" id="L48">    }</span>
+    
+    private String Nome;
+    private int Vitoria;
+    private int Derrota;
+    private String Temporada;
+    protected List&lt;Jogador&gt; listaJogadores;
+    
+    public abstract void addJogador(List&lt;Jogador&gt; jogadores);
+    public abstract void addJogador(Jogador jogador);
+    
+    public void addVitoria(){
+<span class="fc" id="L60">        this.Vitoria++;</span>
+<span class="fc" id="L61">    }</span>
+    public void addDerrota(){
+<span class="fc" id="L63">        this.Derrota++;</span>
+<span class="fc" id="L64">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>

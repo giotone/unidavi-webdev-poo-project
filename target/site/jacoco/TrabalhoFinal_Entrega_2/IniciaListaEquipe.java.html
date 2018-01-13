@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IniciaListaEquipe.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">TrabalhoFinal_Entrega_2</a> &gt; <a href="index.source.html" class="el_package">TrabalhoFinal_Entrega_2</a> &gt; <span class="el_source">IniciaListaEquipe.java</span></div><h1>IniciaListaEquipe.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package TrabalhoFinal_Entrega_2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ *
+ * @author gt2a
+ */
+public class IniciaListaEquipe {
+    
+<span class="fc" id="L17">    private List&lt;EquipeBasquete&gt; equipe = new ArrayList&lt;EquipeBasquete&gt;();</span>
+
+    public List&lt;EquipeBasquete&gt; getEquipe() {
+<span class="fc" id="L20">        return equipe;</span>
+    }
+    
+<span class="fc" id="L23">    public IniciaListaEquipe(){</span>
+        
+<span class="fc" id="L25">        this.addJogadorEquipeUsandoLista();                </span>
+<span class="fc" id="L26">        this.addJogadorEquipeDireto();        </span>
+<span class="fc" id="L27">    }</span>
+    
+    // método criado só para mostrar que é possivel utilizar o &quot;addJogador&quot; de duas maneiras
+    private void addJogadorEquipeUsandoLista(){
+<span class="fc" id="L31">        List&lt;Jogador&gt; listaJogador = new ArrayList&lt;Jogador&gt;();</span>
+    
+<span class="fc" id="L33">        Jogador j1 = new Jogador(&quot;Al Horford&quot;, 42);</span>
+<span class="fc" id="L34">        Jogador j2 = new Jogador(&quot;Jaylen Brown&quot;, 7);</span>
+<span class="fc" id="L35">        Jogador j3 = new Jogador(&quot;Aron Baynes&quot;,46);</span>
+<span class="fc" id="L36">        Jogador j4 = new Jogador(&quot;Jayson Tatum&quot;,0);</span>
+        
+<span class="fc" id="L38">        listaJogador.add(j1);</span>
+<span class="fc" id="L39">        listaJogador.add(j2);</span>
+<span class="fc" id="L40">        listaJogador.add(j3);</span>
+<span class="fc" id="L41">        listaJogador.add(j4);                </span>
+        
+<span class="fc" id="L43">        EquipeBasquete celtics = new EquipeBasquete(&quot;Boston Celtics&quot;,&quot;2017-2018&quot;);</span>
+<span class="fc" id="L44">        celtics.setVitoria(10);</span>
+<span class="fc" id="L45">        celtics.setDerrota(2);</span>
+<span class="fc" id="L46">        celtics.addJogador(listaJogador);</span>
+        
+<span class="fc" id="L48">        this.equipe.add(celtics);</span>
+<span class="fc" id="L49">    }</span>
+    
+    private void addJogadorEquipeDireto(){
+        
+<span class="fc" id="L53">        EquipeBasquete hornets = new EquipeBasquete(&quot;Charlotte Hornets&quot;,&quot;2017-2018&quot;);</span>
+<span class="fc" id="L54">        hornets.setVitoria(0);</span>
+<span class="fc" id="L55">        hornets.setDerrota(0);</span>
+<span class="fc" id="L56">        hornets.addJogador(new Jogador(&quot;Malik Monk&quot;,1));</span>
+<span class="fc" id="L57">        hornets.addJogador(new Jogador(&quot;Kemba Walker&quot;,15));</span>
+<span class="fc" id="L58">        hornets.addJogador(new Jogador(&quot;Jeremy Lamb&quot;,3));</span>
+<span class="fc" id="L59">        hornets.addJogador(new Jogador(&quot;Cody Zeller&quot;,40));</span>
+        
+<span class="fc" id="L61">        EquipeBasquete pistons = new EquipeBasquete(&quot;Detroit Pistons&quot;,&quot;2017-2018&quot;);</span>
+<span class="fc" id="L62">        pistons.setVitoria(0);</span>
+<span class="fc" id="L63">        pistons.setDerrota(0);</span>
+<span class="fc" id="L64">        pistons.addJogador(new Jogador(&quot;Tobias Harris&quot;,34));</span>
+<span class="fc" id="L65">        pistons.addJogador(new Jogador(&quot;Stanley Johnson&quot;,7));</span>
+<span class="fc" id="L66">        pistons.addJogador(new Jogador(&quot;Andre Drummond&quot;,0));</span>
+<span class="fc" id="L67">        pistons.addJogador(new Jogador(&quot;Ishmael Smith&quot;,14));</span>
+        
+<span class="fc" id="L69">        EquipeBasquete magic = new EquipeBasquete(&quot;Orlando Magic&quot;,&quot;2017-2018&quot;);</span>
+<span class="fc" id="L70">        magic.setVitoria(0);</span>
+<span class="fc" id="L71">        magic.setDerrota(0);</span>
+<span class="fc" id="L72">        magic.addJogador(new Jogador(&quot;T.J. Warren&quot;,12));</span>
+<span class="fc" id="L73">        magic.addJogador(new Jogador(&quot;Alex Len&quot;,21));</span>
+<span class="fc" id="L74">        magic.addJogador(new Jogador(&quot;Devin Booker&quot;,1));</span>
+<span class="fc" id="L75">        magic.addJogador(new Jogador(&quot;Josh Jackson&quot;,20));</span>
+        
+<span class="fc" id="L77">        this.equipe.add(hornets);</span>
+<span class="fc" id="L78">        this.equipe.add(pistons);</span>
+<span class="fc" id="L79">        this.equipe.add(magic);</span>
+<span class="fc" id="L80">    }</span>
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>

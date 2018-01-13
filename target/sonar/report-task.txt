@@ -2,5 +2,5 @@ projectKey=com.mycompany:TrabalhoFinal_Entrega_2
 serverUrl=http://localhost:9000
 serverVersion=6.7.0.33306
 dashboardUrl=http://localhost:9000/dashboard/index/com.mycompany:TrabalhoFinal_Entrega_2
-ceTaskId=AWC4fLwGzT6gxrt-aH9p
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AWC4fLwGzT6gxrt-aH9p
+ceTaskId=AWDxLu5dhj0dJZfrKP0R
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWDxLu5dhj0dJZfrKP0R
