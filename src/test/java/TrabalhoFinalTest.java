@@ -111,9 +111,9 @@ public class TrabalhoFinalTest {
          
         EquipeBasquete bulls = new EquipeBasquete("Chicago Bulls","2017-2018");
         
-        bulls.addVitoria();
-        bulls.addVitoria();
-        bulls.addVitoria();
+        bulls.addVitoriaEquipe();
+        bulls.addVitoriaEquipe();
+        bulls.addVitoriaEquipe();
         
         Assert.assertEquals(3, bulls.getVitoria());
      }
@@ -123,7 +123,7 @@ public class TrabalhoFinalTest {
          
         EquipeBasquete bulls = new EquipeBasquete("Chicago Bulls","2017-2018");
         
-        bulls.addDerrota();        
+        bulls.addDerrotaEquipe();        
         
         Assert.assertEquals(1, bulls.getDerrota());
      }

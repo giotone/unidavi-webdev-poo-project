@@ -56,10 +56,10 @@ public abstract class Equipe {
     public abstract void addJogador(List<Jogador> jogadores);
     public abstract void addJogador(Jogador jogador);
     
-    public void addVitoria(){
+    protected void addVitoria(){
         this.Vitoria++;
     }
-    public void addDerrota(){
+    protected void addDerrota(){
         this.Derrota++;
     }
 }

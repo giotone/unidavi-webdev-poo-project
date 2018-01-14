@@ -32,4 +32,11 @@ public class EquipeBasquete extends Equipe {
         listaJogadores.add(jogador);
     }
        
+    public void addVitoriaEquipe(){
+        this.addVitoria();
+    }
+    
+    public void addDerrotaEquipe(){
+        this.addDerrota();
+    }
 }

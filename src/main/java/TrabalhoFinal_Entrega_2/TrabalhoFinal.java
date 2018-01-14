@@ -30,28 +30,28 @@ public class TrabalhoFinal {
         nba.listarJogos();
         
         
-        /*
+        
         //Caso de uso 1 agenda novos jogos
         nba.agendarJogo(celtics, magic, "10/11/2017 08:00");
         nba.agendarJogo(pistons, hornets, "10/11/2017 14:00");
-        */
+        
 
-        /*
+        
         // listar todos os jogos
         nba.listarJogos();
-        */
+        
 
-        /*
+        
         //Caso de uso 2 listar jogos por data
         nba.listarJogos("05/11/2017");
-        */
+        
 
-        /*
+        
         //Caso de uso 3 reagendar um jogo
         nba.listarJogos(5);
         nba.reagendarJogo(5, "18/11/2017 16:00");
         nba.listarJogos(5);
-        */
+        
     }
     
 }
